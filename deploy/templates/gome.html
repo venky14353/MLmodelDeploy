@@ -1,0 +1,30 @@
+
+<html>
+
+    <body bgcolor=#d4a3ae>
+
+        <center>
+            <h1>IRIS FLOWER DETECTION</h1><br>
+            {% if result %}
+            <p>{{ result }}</p>
+            {% endif %}
+        
+            <form  method="POST", action="/predict">
+
+            
+                <b> <input type="text", name="a", placeholder="Enter 1"> <br><br>
+                    <input type="text", name="b", placeholder = 'Enter 2'> <br><br>
+                    <input type="text", name="c", placeholder = 'Enter 3'> <br><br>
+                    <input type="text", name="d", placeholder = 'Enter 4'> <br><br>  
+                </b>
+                    <input type="submit", value="predict"> <br><br><br>
+            
+                 
+
+            </form>
+
+        </center>
+
+
+    </body>
+</html>
