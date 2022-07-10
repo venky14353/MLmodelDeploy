@@ -1,0 +1,27 @@
+<html>
+<body bgcolor="sky blue">
+    <center>
+        <h1>Titanic Survival prediction</h1>
+        {% if result %} 
+        <p>{{ result }}</p>
+        {% endif %}
+
+        <form action="/predict", method="POST">
+            <b>
+                <input type = "text", name="Pclass", placeholder="Pclass"><br><br>
+                <input type="text", name="Sex", placeholder="Sex"><br><br>
+                <input type="text", name="Age", placeholder="Age"><br><br>
+                <input type="text", name="SibSp", placeholder="SibSp"><br><br>
+                <input type="text", name="Parch", placeholder="Parch"><br><br>
+                <input type="text", name="Fare", placeholder="Fare"><br><br>
+                <input type="text", name="Embarked", placeholder="Embarked"><br><br>
+                
+            
+            </b>
+            <input type="submit", value="predict"><br><br><br>
+        </form>
+        
+    </center>
+
+</body>
+</html>
