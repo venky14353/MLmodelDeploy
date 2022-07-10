@@ -1,0 +1,27 @@
+<html>
+<body bgcolor="pink">
+    <center>
+    <h1>Diabetes Prediction</h1>
+        {% if result %} 
+        <p>{{ result }}</p>
+        {% endif %}
+    <form action="/predict", method="POST">
+        <b>
+            <input type="text", name="Pregnancies", placeholder="Pregnancies"> <br><br>
+            <input type="text", name="Glucose", placeholder="Glucose"> <br><br>
+            <input type="text", name="BloodPressure", placeholder="BloodPressure"> <br><br>
+            <input type="text", name="SkinThickness", placeholder="SkinThickness"> <br><br>
+            <input type="text", name="Insulin", placeholder="Insulin"> <br><br>
+            <input type="text", name="BMI", placeholder="BMI"> <br><br>
+            <input type="text", name="DiabetesPedigreeFunction", placeholder="DiabetesPedigreeFunction"> <br><br>
+            <input type="text", name="Age", placeholder="Age"> <br><br>
+       
+            
+
+        </b>
+        <input type="submit", value="predict"> <br><br><br><br><br>
+
+    </form>
+    </center>   
+</body>
+</html>
